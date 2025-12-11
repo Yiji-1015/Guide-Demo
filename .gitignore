@@ -46,3 +46,6 @@ Thumbs.db
 **/__pycache__/
 .envrc
 docker-compose.override.yml
+
+# === Files ===
+company_chatbot/files/
