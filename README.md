@@ -30,7 +30,7 @@ docker run -it `
   -p 8000:8000 `
   ubuntu:24.04 bash
 
-# 파이썬 설지
+# 파이썬 설치
 apt update && apt install -y git python3.12 python3.12-venv python3-pip vim
 
 # 가상환경 세팅
@@ -41,24 +41,27 @@ source .venv_docker/bin/activate
 ### Github 기본 명령어 모음
 
 ```powershell
-# 1️⃣ 저장소 클론 (최초 1회)
+# 저장소 클론 (최초 1회)
 git clone https://github.com/Yiji-1015/Guide-Demo.git
 cd Guide-Demo
 
-# 2️⃣ 현재 브랜치 확인
+# 현재 브랜치 확인
 git branch
 
-# 3️⃣ 브랜치 이동 (필요시)
+# 브랜치 이동 (필요시)
 git checkout main  # 혹은 다른 브랜치 이름
 
-# 4️⃣ 원격 브랜치 최신화
+# 원격 브랜치 최신화
 git fetch origin          # 원격 저장소 정보 동기화
 git pull origin main       # 원격 main의 최신 커밋 반영
 
-# 5️⃣ 변경사항 스테이징 및 커밋
+# 변경사항 스테이징 및 커밋
 git add .                  # 모든 변경사항 추가
 git commit -m "어쩌구"     # 커밋 메시지 작성
 
-# 6️⃣ 변경사항 푸시 (업로드)
+# 변경사항 푸시 (업로드)
 git push -u origin main    # 원격 저장소(main)에 업로드
+
+# add나 commit 한 거 지우고 싶을 때
+git reset
 ```
