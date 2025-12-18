@@ -1,0 +1,52 @@
+# === Python 기본 ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+build/
+dist/
+
+# === Virtual environments ===
+.venv_docker/
+.venv*/
+.venv/
+venv/
+env/
+ENV/
+env*/          
+*.env          
+
+# === Jupyter ===
+.ipynb_checkpoints/
+
+# === VS Code ===
+.vscode/
+.history/
+
+# === System ===
+.DS_Store
+Thumbs.db
+
+# === Bash / Shell personal configs ===
+.profile
+.bashrc
+.bash_history
+.bash_logout
+
+# === Logs & temp ===
+*.log
+*.tmp
+*.bak
+*.swp
+
+# === Docker ===
+**/__pycache__/
+.envrc
+docker-compose.override.yml
+
+# === Files ===
+company_chatbot/files/
+*.pdfbus_bts.csv
